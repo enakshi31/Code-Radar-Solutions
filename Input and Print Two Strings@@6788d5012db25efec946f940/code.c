@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main() {
-    char a[64];
-    char b[64];
-    scanf("%c %c",&a[64],&b[64]);
-    printf("You entered: %c and %c\n",a[64],b[64]);
+    char a[20];
+    char b[20];
+    scanf("%c %c",&a[20],&b[20]);
+    printf("You entered: %c and %c\n",a[20],b[20]);
     return 0;
 }
