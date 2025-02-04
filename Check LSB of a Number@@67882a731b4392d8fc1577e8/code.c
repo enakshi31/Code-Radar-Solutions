@@ -4,7 +4,7 @@
 int main() {
     int a;
     scanf("%d",&a);
-    if (a & l)
+    if (a & 1)
     {
         printf("Set");
     }
