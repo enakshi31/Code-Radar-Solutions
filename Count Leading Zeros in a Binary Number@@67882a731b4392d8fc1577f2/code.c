@@ -5,7 +5,7 @@ int main() {
     int num;
     scanf("%d",&num);
     if(num <= 0){
-        printf("32\n");
+        printf("31\n");
         return 0;
     }
     int count = 0;
