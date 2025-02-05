@@ -5,11 +5,11 @@ int main() {
     int num;
     scanf("%d",&num);
     if(num <= 0){
-        printf("31\n");
+        printf("32\n");
         return 0;
     }
     int count = 0;
-    for (int i = 31; i >= 0; i--)
+    for (int i = 32; i >= 0; i--)
     {
         if ((num >> 1) & 1) {
             break;
