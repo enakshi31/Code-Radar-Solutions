@@ -11,6 +11,10 @@ int main() {
     {
         printf("Leap Year");
     }
+    else if (n % 100 == 0)
+    {
+        printf("Not a Leap Year");
+    }
     else
     {
     printf("Not a Leap Year");
