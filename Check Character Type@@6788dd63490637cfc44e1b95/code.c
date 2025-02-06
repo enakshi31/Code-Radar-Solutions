@@ -1,15 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    char a;
-    scanf("%c",&a);
-    if(n == ('a','e','i','o','u'))
+    char n;
+    scanf("%c",&n);
+    if(isdigit(n))
     {
-        printf("Vowel");
+        printf("Digit");
     }
-    else
+    else if (isalpha(n))
     {
-        printf("Consonant");
+        n = tolower(n);
+        if (n == 'a' || n == 'e' || n == 'i' || n == 'o' || n == 'u') {
+            printf("Vowel\n");
+        } else {
+            printf("Consonant\n");
+        }
+    } else {
+        printf("Special Character\n");
     }
     return 0;
 }
