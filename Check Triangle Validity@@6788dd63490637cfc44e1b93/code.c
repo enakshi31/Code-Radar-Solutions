@@ -3,7 +3,7 @@
 int main() {
     int a,b,c;
     scanf("%d",&a,&b,&c);
-    if (((a+b)>c) && ((b+c)>a) && ((a+c)>b))
+    if ((a + b > c) && (a + c > b) && (b + c > a))
     {
         printf("Valid");
     }
