@@ -5,11 +5,11 @@ int main() {
     scanf("%d",&a,&b,&c);
     if ((a+b)>c)
     {
-        printf("Valid");
+        printf("Invalid");
     }
     else
     {
-        printf("Invalid");
+        printf("Valid");
     }
     return 0;
 }
