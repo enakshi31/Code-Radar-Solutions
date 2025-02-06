@@ -8,7 +8,6 @@ int main() {
     if (isdigit(ch)) {
         printf("Digit\n");
     } else if (isalpha(ch)) {
-        // Convert to lowercase for easy comparison
         ch = tolower(ch);
         if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
             printf("Vowel\n");
