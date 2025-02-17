@@ -1,10 +1,10 @@
 // Your code here...
 #include<stdio.h>
 int main() {
-    int n, pro=1;
+    int n;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++) {
+    for(int i=1;i<=10;i++) {
         pro*=i;
     }
-    printf("%d X %d",pro,i);
+    printf("%d X %d = %d",n,i,n*i);
 }
