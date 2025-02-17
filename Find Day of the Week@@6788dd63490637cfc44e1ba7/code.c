@@ -29,5 +29,8 @@ break;
 case 7:
 printf("Sunday\n");
 break;
+case 8:
+printf("Invalid");
+break;
 }
 }
