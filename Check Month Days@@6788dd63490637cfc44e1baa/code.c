@@ -43,6 +43,6 @@ int main() {
         default:
         printf("Invalid month");
 
-
     }
+    return 0;
 }
