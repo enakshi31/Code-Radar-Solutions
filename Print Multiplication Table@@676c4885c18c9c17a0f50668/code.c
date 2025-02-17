@@ -6,5 +6,5 @@ int main() {
     for(int i=1;i<=n;i++) {
         pro*=i;
     }
-    printf("%d * %d",pro,i);
+    printf("%d X %d",pro,i);
 }
