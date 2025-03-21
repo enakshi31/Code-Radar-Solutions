@@ -1,26 +1,31 @@
 #include<stdio.h>
-int main(){
-    int N,r,c,i;   
-    printf("Enter N:");
-    scanf("%d",&N);   
-    int A[N];
-    for(i=0;i<N;i++){
-        printf("Enter the value:");
-        scanf("%d",&A[i]);
-    }   
-      int *p;
-       p=&A[0];//storing base address
-    for(r=0;r<N;r++){
-        for(c=0;c<N-1-r;c++){
-            if((p+c)>(p+c+1)){
-                    int temp=*(p+c);
-                    (p+c)=(p+c+1);
-                    *(p+c+1)=temp;
-                }
+void bubblesort(int arr[], int n){
+    for (int i=0;i<n-1,i++){
+        for (int j=0;j<n-1;j++){
+            if (arr[j]>arr[j+1]){
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+            }
         }
-    } 
-    printf("\nSorted Array:\n");
-       for(i=0;i<N;i++){
-        printf("\n%d",*(p+i));
     }
+}
+
+void printarray (int arr[], int n) {
+    for (int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+    printf("\n");
+}
+
+int main(){
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    bubblesort(arr,n);
+    printarray(arr,n);
+    return 0;
 }
